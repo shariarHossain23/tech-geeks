@@ -1,12 +1,14 @@
 import React from 'react';
 import useBlog from '../../Hooks/useBlog';
+import Blogs from '../Blogs/Blogs';
 
 const Home = () => {
   const [blogs,setBlogs] = useBlog();
-  console.log(blogs);
     return (
         <div>
-            <h2>this is home</h2>
+            {
+                blogs.map(blog => <Blogs key={blog._id} blogs={blog} > </Blogs>)
+            }
         </div>
     );
 };
