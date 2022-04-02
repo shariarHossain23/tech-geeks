@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useBlog = () => {
-    const [blogs,setBlogs] = useState();
+    const [blogs,setBlogs] = useState([]);
     useEffect(()=>{
         fetch('data.json')
         .then(res => res.json())
