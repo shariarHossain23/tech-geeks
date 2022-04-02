@@ -12,6 +12,11 @@ const Blogdetails = () => {
             <div className='linear-gradient'>
                 <button className='back-btn' onClick={()=> navigate(-1)}>back</button>
             </div>
+            <div className='blog-details'>
+                <img src={blog?.imageURL} alt="" />
+                <h2>{blog?.title}</h2>
+                <p>{blog?.blog}</p>
+            </div>
         </div>
     );
 };
