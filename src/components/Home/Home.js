@@ -1,9 +1,9 @@
-import React from 'react';
-import useBlog from '../../Hooks/useBlog';
+import React, { useContext } from 'react';
+import { blogContext } from '../../App';
 import Blogs from '../Blogs/Blogs';
 
 const Home = () => {
-  const [blogs,setBlogs] = useBlog();
+  const [blogs] = useContext(blogContext);
     return (
         <div>
             {

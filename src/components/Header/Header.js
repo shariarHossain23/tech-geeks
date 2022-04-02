@@ -1,10 +1,12 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import CustomLink from '../CustomLink/CustomLink';
 import './header.css';
 
 const Header = () => {
+    const {pathname} = useLocation()
     return (
-        <div className='header'>
+        <div style={pathname.includes('blog') ? {display:'none'}:{display:'flex'}} className='header'>
             <h1>Tech Geeks</h1>
             <nav className='navbar'>
             <CustomLink to='/'>Home</CustomLink>
