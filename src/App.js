@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Notfound from './components/Notfound/Notfound';
+import Signup from './components/SIgnup/Signup';
 import Videos from './components/Videos/Videos';
 import useBlog from './Hooks/useBlog';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/blog/:id'element={<Blogdetails/>}/>
         <Route path='/videos' element={<Videos/>} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='*' element={<Notfound/>}/>
       </Routes>
       </blogContext.Provider>

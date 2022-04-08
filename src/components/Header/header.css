@@ -16,3 +16,8 @@
   text-decoration: none;
   font-size: 20px;
 }
+.logout {
+  border: none;
+  background-color: #4977ad;
+  color: #fff;
+}

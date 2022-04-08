@@ -1,0 +1,36 @@
+.auth-login {
+  box-shadow: 1px 6px 10px 7px rgba(0, 0, 0, 0.22);
+  padding: 40px;
+  width: 40%;
+  margin: 10% auto;
+  border-radius: 5px;
+}
+.input-field input {
+  width: 80%;
+  outline: none;
+  padding: 8px;
+  /* margin-bottom: 20px; */
+}
+.loginbtn {
+  background-color: #1e90ce;
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.create-new span {
+  color: blue;
+  border-bottom: blue;
+}
+.btn-google {
+  background-color: cornflowerblue;
+  border: none;
+  padding: 10px 30px;
+  color: #fff;
+  margin-top: 10px;
+}
+.error {
+  color: red;
+  margin: 5px;
+}
